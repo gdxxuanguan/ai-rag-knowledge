@@ -4,12 +4,72 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f573f03-eb43-4ab9-9023-d30fa4d25621" name="Changes" comment="" />
+    <list default="true" id="5f573f03-eb43-4ab9-9023-d30fa4d25621" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/xuanguan/dev/api/IAiService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/xuanguan/dev/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/xuanguan/dev/config/OllamaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/xuanguan/dev/config/RedisClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/xuanguan/dev/config/RedisClientConfigProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/application-test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dev-ops/api/curl.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dev-ops/api/curl.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment-aliyun.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/html/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/html/git.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/html/images/ai-rag-knowledge-6-01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/html/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/html/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/html/upload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/html/第4节：ai-case-04.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/html/第7节：ai-case-01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/html/第7节：ai-case-02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/html/第7节：ai-case-03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dev-ops/pgvector/sql/init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dev-ops/redis/redis.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/api/curl.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/api/curl.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/docker-compose-app-v1.0.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/docker-compose-environment-aliyun.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/docker-compose-environment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/maven/settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/nginx/conf/conf.d/localhost.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/nginx/conf/nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/nginx/html/css/github.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/nginx/html/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/nginx/html/git.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/nginx/html/images/ai-rag-knowledge-6-01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/nginx/html/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/nginx/html/js/axios.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/nginx/html/js/highlight.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/nginx/html/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/nginx/html/js/marked.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/nginx/html/js/purify.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/nginx/html/upload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/pgvector/sql/init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/redis/redis.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trigger/src/main/java/com/xuanguan/dev/trigger/http/OllamaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trigger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/trigger/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -24,29 +84,64 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2wBErnW9fvdyfAX4pcKnkluxQtM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.ai-rag-knowledge [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.ai-rag-knowledge [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.ai-rag-knowledge [org.apache.maven.plugins:maven-clean-plugin:3.3.2:clean].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.dev-ops/docker-compose-environment-aliyun.yml: Compose Deployment.executor": "Run",
+    "Maven.ai-rag-knowledge [clean].executor": "Run",
+    "Maven.ai-rag-knowledge [install].executor": "Run",
+    "Maven.ai-rag-knowledge [org.apache.maven.plugins:maven-clean-plugin:3.3.2:clean].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.Application.executor": "Run",
+    "Spring Boot.Unnamed.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/projects/ai-rag-knowledge/trigger/src/main/java/com/xuanguan/dev/trigger",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\projects\ai-rag-knowledge\trigger\src\main\java\com\xuanguan\dev\trigger" />
+      <recent name="E:\projects\ai-rag-knowledge\app\src\main\java\com\xuanguan\dev\config" />
+      <recent name="E:\projects\ai-rag-knowledge\app\src\java\main\java\com\xuanguan\dev" />
+      <recent name="E:\projects\ai-rag-knowledge\app\src\java" />
+      <recent name="E:\projects\ai-rag-knowledge" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\projects\ai-rag-knowledge\app\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xuanguan.dev.trigger.http" />
+      <recent name="com.xuanguan.dev.api" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="app" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xuanguan.dev.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -67,11 +162,36 @@
       <workItem from="1745509568483" duration="1112000" />
       <workItem from="1745545553228" duration="193000" />
       <workItem from="1745545917792" duration="495000" />
-      <workItem from="1746089683216" duration="743000" />
+      <workItem from="1746089683216" duration="3403000" />
+      <workItem from="1746108821514" duration="4227000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <option name="closed" value="true" />
+      <created>1746090614931</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1746090614931</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
 </project>
