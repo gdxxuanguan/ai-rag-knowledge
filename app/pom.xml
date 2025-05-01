@@ -88,6 +88,10 @@
             <artifactId>trigger</artifactId>
             <version>1.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.xuanguan</groupId>
+            <artifactId>api</artifactId>
+        </dependency>
 
     </dependencies>
 

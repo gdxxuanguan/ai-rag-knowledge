@@ -47,7 +47,7 @@ public class OllamaController implements IAiService {
     /**
      * http://localhost:8090/api/v1/ollama/generate_stream?model=deepseek-r1:1.5b&message=hi
      */
-    @GetMapping("ge")
+    @GetMapping("generate_stream")
     @Override
     public Flux<ChatResponse> generateStream(@RequestParam("model") String model, @RequestParam("message") String message) {
         log.info("访问");

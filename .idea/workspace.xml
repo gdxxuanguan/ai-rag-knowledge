@@ -5,58 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f573f03-eb43-4ab9-9023-d30fa4d25621" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/xuanguan/dev/api/IAiService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/xuanguan/dev/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/xuanguan/dev/config/OllamaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/xuanguan/dev/config/RedisClientConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/xuanguan/dev/config/RedisClientConfigProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/application-test.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/api/curl.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/api/curl.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment-aliyun.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/html/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/html/git.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/html/images/ai-rag-knowledge-6-01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/html/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/html/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/html/upload.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/html/第4节：ai-case-04.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/html/第7节：ai-case-01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/html/第7节：ai-case-02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/html/第7节：ai-case-03.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/pgvector/sql/init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/redis/redis.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/api/curl.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/api/curl.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/docker-compose-app-v1.0.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/docker-compose-environment-aliyun.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/docker-compose-environment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/maven/settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/nginx/conf/conf.d/localhost.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/nginx/conf/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/nginx/html/css/github.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/nginx/html/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/nginx/html/git.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/nginx/html/images/ai-rag-knowledge-6-01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/nginx/html/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/nginx/html/js/axios.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/nginx/html/js/highlight.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/nginx/html/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/nginx/html/js/marked.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/nginx/html/js/purify.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/nginx/html/upload.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/pgvector/sql/init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tag/v1.0/redis/redis.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trigger/src/main/java/com/xuanguan/dev/trigger/http/OllamaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trigger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/trigger/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xuanguan/dev/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/xuanguan/dev/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trigger/src/main/java/com/xuanguan/dev/trigger/http/OllamaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/trigger/src/main/java/com/xuanguan/dev/trigger/http/OllamaController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +69,9 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\projects\ai-rag-knowledge\trigger\src\main\java\com\xuanguan\dev\trigger" />
@@ -163,7 +118,7 @@
       <workItem from="1745545553228" duration="193000" />
       <workItem from="1745545917792" duration="495000" />
       <workItem from="1746089683216" duration="3403000" />
-      <workItem from="1746108821514" duration="4227000" />
+      <workItem from="1746108821514" duration="7876000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -173,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746090614931</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init">
+      <option name="closed" value="true" />
+      <created>1746113082741</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746113082741</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
