@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f573f03-eb43-4ab9-9023-d30fa4d25621" name="Changes" comment="init">
+    <list default="true" id="5f573f03-eb43-4ab9-9023-d30fa4d25621" name="Changes" comment="调用流程完成">
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/xuanguan/dev/test/JGitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/xuanguan/dev/test/RAGTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/resources/data/file.text" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/resources/data/file.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xuanguan/dev/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/xuanguan/dev/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trigger/src/main/java/com/xuanguan/dev/trigger/http/OllamaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/trigger/src/main/java/com/xuanguan/dev/trigger/http/OllamaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/pgvector/sql/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/pgvector/sql/init.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +45,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.dev-ops/docker-compose-environment-aliyun.yml.pgadmin: Compose Deployment.executor": "Run",
+    "Docker.dev-ops/docker-compose-environment-aliyun.yml.vector_db: Compose Deployment.executor": "Run",
     "Docker.dev-ops/docker-compose-environment-aliyun.yml: Compose Deployment.executor": "Run",
+    "JUnit.RAGTest.chat.executor": "Run",
+    "JUnit.RAGTest.executor": "Run",
+    "JUnit.RAGTest.upload.executor": "Run",
     "Maven.ai-rag-knowledge [clean].executor": "Run",
     "Maven.ai-rag-knowledge [install].executor": "Run",
     "Maven.ai-rag-knowledge [org.apache.maven.plugins:maven-clean-plugin:3.3.2:clean].executor": "Run",
@@ -56,7 +63,7 @@
     "Spring Boot.Unnamed.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/projects/ai-rag-knowledge/trigger/src/main/java/com/xuanguan/dev/trigger",
+    "last_opened_file_path": "E:/projects/ai-rag-knowledge/app/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,11 +81,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\projects\ai-rag-knowledge\app\src" />
       <recent name="E:\projects\ai-rag-knowledge\trigger\src\main\java\com\xuanguan\dev\trigger" />
       <recent name="E:\projects\ai-rag-knowledge\app\src\main\java\com\xuanguan\dev\config" />
       <recent name="E:\projects\ai-rag-knowledge\app\src\java\main\java\com\xuanguan\dev" />
       <recent name="E:\projects\ai-rag-knowledge\app\src\java" />
-      <recent name="E:\projects\ai-rag-knowledge" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\projects\ai-rag-knowledge\app\src" />
@@ -88,7 +95,54 @@
       <recent name="com.xuanguan.dev.api" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.RAGTest.chat">
+    <configuration name="RAGTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xuanguan.dev.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xuanguan.dev.test" />
+      <option name="MAIN_CLASS_NAME" value="com.xuanguan.dev.test.RAGTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RAGTest.chat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xuanguan.dev.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xuanguan.dev.test" />
+      <option name="MAIN_CLASS_NAME" value="com.xuanguan.dev.test.RAGTest" />
+      <option name="METHOD_NAME" value="chat" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RAGTest.upload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xuanguan.dev.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xuanguan.dev.test" />
+      <option name="MAIN_CLASS_NAME" value="com.xuanguan.dev.test.RAGTest" />
+      <option name="METHOD_NAME" value="upload" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unnamed" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="app" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xuanguan.dev.Application" />
@@ -96,6 +150,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev-ops/docker-compose-environment-aliyun.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docs/dev-ops/docker-compose-environment-aliyun.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="dev-ops/docker-compose-environment-aliyun.yml.vector_db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="vector_db" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docs/dev-ops/docker-compose-environment-aliyun.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.dev-ops/docker-compose-environment-aliyun.yml.vector_db: Compose Deployment" />
+      <item itemvalue="Docker.dev-ops/docker-compose-environment-aliyun.yml: Compose Deployment" />
+      <item itemvalue="JUnit.RAGTest" />
+      <item itemvalue="JUnit.RAGTest.chat" />
+      <item itemvalue="JUnit.RAGTest.upload" />
+      <item itemvalue="Spring Boot.Unnamed" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RAGTest.chat" />
+        <item itemvalue="JUnit.RAGTest" />
+        <item itemvalue="JUnit.RAGTest.upload" />
+        <item itemvalue="Docker.dev-ops/docker-compose-environment-aliyun.yml: Compose Deployment" />
+        <item itemvalue="Docker.dev-ops/docker-compose-environment-aliyun.yml.vector_db: Compose Deployment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -118,7 +214,7 @@
       <workItem from="1745545553228" duration="193000" />
       <workItem from="1745545917792" duration="495000" />
       <workItem from="1746089683216" duration="3403000" />
-      <workItem from="1746108821514" duration="7876000" />
+      <workItem from="1746108821514" duration="16437000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -136,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746113082741</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="调用流程完成">
+      <option name="closed" value="true" />
+      <created>1746117679381</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746117679381</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +259,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="调用流程完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="调用流程完成" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/test/java/com/xuanguan/dev/test/RAGTest.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
