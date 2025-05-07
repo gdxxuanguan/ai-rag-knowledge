@@ -1,0 +1,1254 @@
+25-05-02.00:08:38.662 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-05-02.00:08:38.666 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-05-02.00:11:46.169 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 78360 (E:\projects\ai-rag-knowledge\app\target\classes started by roxy in E:\projects\ai-rag-knowledge)
+25-05-02.00:11:46.170 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-05-02.00:11:46.885 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-05-02.00:11:46.888 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-05-02.00:11:46.912 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+25-05-02.00:11:47.571 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-05-02.00:11:47.585 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-05-02.00:11:47.586 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-05-02.00:11:47.587 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-05-02.00:11:47.651 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-05-02.00:11:47.651 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1297 ms
+25-05-02.00:11:47.698 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'application': Post-processing of merged bean definition failed
+25-05-02.00:11:47.700 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-05-02.00:11:47.714 [main            ] INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+25-05-02.00:11:47.728 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'application': Post-processing of merged bean definition failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:577)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.xuanguan.dev.Application.main(Application.java:19)
+Caused by: java.lang.IllegalStateException: @Resource annotation is not supported on static fields
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.lambda$buildResourceMetadata$0(CommonAnnotationBeanPostProcessor.java:438)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:691)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:429)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:410)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:312)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1085)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:574)
+	... 15 common frames omitted
+25-05-02.00:13:32.665 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 72904 (E:\projects\ai-rag-knowledge\app\target\classes started by roxy in E:\projects\ai-rag-knowledge)
+25-05-02.00:13:32.666 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-05-02.00:13:33.296 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-05-02.00:13:33.299 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-05-02.00:13:33.319 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+25-05-02.00:13:33.789 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-05-02.00:13:33.801 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-05-02.00:13:33.802 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-05-02.00:13:33.802 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-05-02.00:13:33.866 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-05-02.00:13:33.866 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1023 ms
+25-05-02.00:13:34.242 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-05-02.00:13:34.378 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@6d4502ca
+25-05-02.00:13:34.380 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-05-02.00:13:35.576 [main            ] INFO  Version                - Redisson 3.44.0
+25-05-02.00:13:35.935 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-05-02.00:13:35.956 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-05-02.00:13:36.451 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+25-05-02.00:13:36.459 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8090 (http) with context path ''
+25-05-02.00:13:36.465 [main            ] INFO  Application            - Started Application in 4.28 seconds (process running for 4.853)
+25-05-02.00:13:40.780 [http-nio-8090-exec-2] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-05-02.00:13:40.781 [http-nio-8090-exec-2] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-05-02.00:13:40.782 [http-nio-8090-exec-2] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-05-02.00:14:10.677 [http-nio-8090-exec-6] INFO  OllamaController       - 访问
+25-05-02.00:14:10.825 [http-nio-8090-exec-4] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] threw exception
+org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from POST http://127.0.0.1:11434/api/chat
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 404 NOT_FOUND from POST http://127.0.0.1:11434/api/chat [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:214)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.checkTerminated(FluxPublish.java:634)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.drain(FluxPublish.java:494)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.onComplete(FluxPublish.java:355)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onComplete(FluxContextWrite.java:126)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onComplete(FluxMapFuseable.java:350)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drainAsync(FluxFlattenIterable.java:371)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drain(FluxFlattenIterable.java:724)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.onComplete(FluxFlattenIterable.java:273)
+		at reactor.adapter.JdkFlowAdapter$SubscriberToRS.onComplete(JdkFlowAdapter.java:160)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.complete(ResponseSubscribers.java:933)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$new$1(ResponseSubscribers.java:864)
+		at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2147)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$subscribe$3(ResponseSubscribers.java:961)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:757)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+		at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2182)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.subscribe(ResponseSubscribers.java:957)
+		at reactor.adapter.JdkFlowAdapter$FlowPublisherAsFlux.subscribe(JdkFlowAdapter.java:68)
+		at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:68)
+		at reactor.core.publisher.FluxPublish.connect(FluxPublish.java:106)
+		at reactor.core.publisher.FluxAutoConnect.subscribe(FluxAutoConnect.java:62)
+		at reactor.core.publisher.Flux.subscribe(Flux.java:8836)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onNext(MonoFlatMapMany.java:196)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:294)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:188)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:121)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:67)
+		at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+		at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614)
+		at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:844)
+		at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483)
+		at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+		at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+		at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+		at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+		at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+25-05-02.00:14:10.828 [http-nio-8090-exec-4] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from POST http://127.0.0.1:11434/api/chat] with root cause
+org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from POST http://127.0.0.1:11434/api/chat
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 404 NOT_FOUND from POST http://127.0.0.1:11434/api/chat [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:214)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.checkTerminated(FluxPublish.java:634)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.drain(FluxPublish.java:494)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.onComplete(FluxPublish.java:355)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onComplete(FluxContextWrite.java:126)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onComplete(FluxMapFuseable.java:350)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drainAsync(FluxFlattenIterable.java:371)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drain(FluxFlattenIterable.java:724)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.onComplete(FluxFlattenIterable.java:273)
+		at reactor.adapter.JdkFlowAdapter$SubscriberToRS.onComplete(JdkFlowAdapter.java:160)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.complete(ResponseSubscribers.java:933)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$new$1(ResponseSubscribers.java:864)
+		at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2147)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$subscribe$3(ResponseSubscribers.java:961)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:757)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+		at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2182)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.subscribe(ResponseSubscribers.java:957)
+		at reactor.adapter.JdkFlowAdapter$FlowPublisherAsFlux.subscribe(JdkFlowAdapter.java:68)
+		at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:68)
+		at reactor.core.publisher.FluxPublish.connect(FluxPublish.java:106)
+		at reactor.core.publisher.FluxAutoConnect.subscribe(FluxAutoConnect.java:62)
+		at reactor.core.publisher.Flux.subscribe(Flux.java:8836)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onNext(MonoFlatMapMany.java:196)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:294)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:188)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:121)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:67)
+		at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+		at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614)
+		at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:844)
+		at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483)
+		at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+		at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+		at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+		at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+		at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+25-05-02.00:14:30.931 [http-nio-8090-exec-8] INFO  OllamaController       - 访问
+25-05-02.00:14:30.940 [http-nio-8090-exec-9] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] threw exception
+org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from POST http://127.0.0.1:11434/api/chat
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 404 NOT_FOUND from POST http://127.0.0.1:11434/api/chat [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:214)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.checkTerminated(FluxPublish.java:634)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.drain(FluxPublish.java:494)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.onComplete(FluxPublish.java:355)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onComplete(FluxContextWrite.java:126)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onComplete(FluxMapFuseable.java:350)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drainAsync(FluxFlattenIterable.java:371)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drain(FluxFlattenIterable.java:724)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.onComplete(FluxFlattenIterable.java:273)
+		at reactor.adapter.JdkFlowAdapter$SubscriberToRS.onComplete(JdkFlowAdapter.java:160)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.complete(ResponseSubscribers.java:933)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$new$1(ResponseSubscribers.java:864)
+		at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2147)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$subscribe$3(ResponseSubscribers.java:961)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:757)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+		at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2182)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.subscribe(ResponseSubscribers.java:957)
+		at reactor.adapter.JdkFlowAdapter$FlowPublisherAsFlux.subscribe(JdkFlowAdapter.java:68)
+		at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:68)
+		at reactor.core.publisher.FluxPublish.connect(FluxPublish.java:106)
+		at reactor.core.publisher.FluxAutoConnect.subscribe(FluxAutoConnect.java:62)
+		at reactor.core.publisher.Flux.subscribe(Flux.java:8836)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onNext(MonoFlatMapMany.java:196)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:294)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:188)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:121)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:67)
+		at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+		at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614)
+		at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:844)
+		at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483)
+		at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+		at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+		at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+		at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+		at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+25-05-02.00:14:30.940 [http-nio-8090-exec-9] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from POST http://127.0.0.1:11434/api/chat] with root cause
+org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from POST http://127.0.0.1:11434/api/chat
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 404 NOT_FOUND from POST http://127.0.0.1:11434/api/chat [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:214)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.checkTerminated(FluxPublish.java:634)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.drain(FluxPublish.java:494)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.onComplete(FluxPublish.java:355)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onComplete(FluxContextWrite.java:126)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onComplete(FluxMapFuseable.java:350)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drainAsync(FluxFlattenIterable.java:371)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drain(FluxFlattenIterable.java:724)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.onComplete(FluxFlattenIterable.java:273)
+		at reactor.adapter.JdkFlowAdapter$SubscriberToRS.onComplete(JdkFlowAdapter.java:160)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.complete(ResponseSubscribers.java:933)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$new$1(ResponseSubscribers.java:864)
+		at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2147)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$subscribe$3(ResponseSubscribers.java:961)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:757)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+		at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2182)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.subscribe(ResponseSubscribers.java:957)
+		at reactor.adapter.JdkFlowAdapter$FlowPublisherAsFlux.subscribe(JdkFlowAdapter.java:68)
+		at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:68)
+		at reactor.core.publisher.FluxPublish.connect(FluxPublish.java:106)
+		at reactor.core.publisher.FluxAutoConnect.subscribe(FluxAutoConnect.java:62)
+		at reactor.core.publisher.Flux.subscribe(Flux.java:8836)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onNext(MonoFlatMapMany.java:196)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:294)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:188)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:121)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:67)
+		at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+		at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614)
+		at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:844)
+		at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483)
+		at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+		at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+		at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+		at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+		at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+25-05-02.00:14:46.512 [http-nio-8090-exec-10] INFO  OllamaController       - 访问
+25-05-02.00:14:46.519 [http-nio-8090-exec-1] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] threw exception
+org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from POST http://127.0.0.1:11434/api/chat
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 404 NOT_FOUND from POST http://127.0.0.1:11434/api/chat [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:214)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.checkTerminated(FluxPublish.java:634)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.drain(FluxPublish.java:494)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.onComplete(FluxPublish.java:355)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onComplete(FluxContextWrite.java:126)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onComplete(FluxMapFuseable.java:350)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drainAsync(FluxFlattenIterable.java:371)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drain(FluxFlattenIterable.java:724)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.onComplete(FluxFlattenIterable.java:273)
+		at reactor.adapter.JdkFlowAdapter$SubscriberToRS.onComplete(JdkFlowAdapter.java:160)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.complete(ResponseSubscribers.java:933)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$new$1(ResponseSubscribers.java:864)
+		at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2147)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$subscribe$3(ResponseSubscribers.java:961)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:757)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+		at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2182)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.subscribe(ResponseSubscribers.java:957)
+		at reactor.adapter.JdkFlowAdapter$FlowPublisherAsFlux.subscribe(JdkFlowAdapter.java:68)
+		at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:68)
+		at reactor.core.publisher.FluxPublish.connect(FluxPublish.java:106)
+		at reactor.core.publisher.FluxAutoConnect.subscribe(FluxAutoConnect.java:62)
+		at reactor.core.publisher.Flux.subscribe(Flux.java:8836)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onNext(MonoFlatMapMany.java:196)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:294)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:188)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:121)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:67)
+		at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+		at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614)
+		at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:844)
+		at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483)
+		at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+		at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+		at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+		at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+		at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+25-05-02.00:14:46.520 [http-nio-8090-exec-1] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from POST http://127.0.0.1:11434/api/chat] with root cause
+org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from POST http://127.0.0.1:11434/api/chat
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 404 NOT_FOUND from POST http://127.0.0.1:11434/api/chat [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:214)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.checkTerminated(FluxPublish.java:634)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.drain(FluxPublish.java:494)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.onComplete(FluxPublish.java:355)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onComplete(FluxContextWrite.java:126)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onComplete(FluxMapFuseable.java:350)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drainAsync(FluxFlattenIterable.java:371)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drain(FluxFlattenIterable.java:724)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.onComplete(FluxFlattenIterable.java:273)
+		at reactor.adapter.JdkFlowAdapter$SubscriberToRS.onComplete(JdkFlowAdapter.java:160)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.complete(ResponseSubscribers.java:933)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$new$1(ResponseSubscribers.java:864)
+		at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2147)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$subscribe$3(ResponseSubscribers.java:961)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:757)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+		at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2182)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.subscribe(ResponseSubscribers.java:957)
+		at reactor.adapter.JdkFlowAdapter$FlowPublisherAsFlux.subscribe(JdkFlowAdapter.java:68)
+		at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:68)
+		at reactor.core.publisher.FluxPublish.connect(FluxPublish.java:106)
+		at reactor.core.publisher.FluxAutoConnect.subscribe(FluxAutoConnect.java:62)
+		at reactor.core.publisher.Flux.subscribe(Flux.java:8836)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onNext(MonoFlatMapMany.java:196)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:294)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:188)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:121)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:67)
+		at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+		at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614)
+		at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:844)
+		at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483)
+		at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+		at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+		at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+		at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+		at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+25-05-02.00:15:14.465 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-05-02.00:15:14.467 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-05-02.00:15:18.170 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 76192 (E:\projects\ai-rag-knowledge\app\target\classes started by roxy in E:\projects\ai-rag-knowledge)
+25-05-02.00:15:18.172 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-05-02.00:15:18.929 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-05-02.00:15:18.935 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-05-02.00:15:18.960 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+25-05-02.00:15:19.585 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-05-02.00:15:19.595 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-05-02.00:15:19.596 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-05-02.00:15:19.597 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-05-02.00:15:19.670 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-05-02.00:15:19.671 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1320 ms
+25-05-02.00:15:19.985 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-05-02.00:15:20.083 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@5534e6f1
+25-05-02.00:15:20.084 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-05-02.00:15:20.610 [main            ] INFO  Version                - Redisson 3.44.0
+25-05-02.00:15:21.016 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-05-02.00:15:21.038 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-05-02.00:15:21.550 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+25-05-02.00:15:21.558 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8090 (http) with context path ''
+25-05-02.00:15:21.564 [main            ] INFO  Application            - Started Application in 3.829 seconds (process running for 4.373)
+25-05-02.00:15:24.610 [http-nio-8090-exec-2] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-05-02.00:15:24.611 [http-nio-8090-exec-2] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-05-02.00:15:24.611 [http-nio-8090-exec-2] INFO  DispatcherServlet      - Completed initialization in 0 ms
+25-05-02.00:15:24.637 [http-nio-8090-exec-2] INFO  OllamaController       - 访问
+25-05-02.00:15:24.746 [http-nio-8090-exec-3] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] threw exception
+org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from POST http://127.0.0.1:11434/api/chat
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 404 NOT_FOUND from POST http://127.0.0.1:11434/api/chat [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:214)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.checkTerminated(FluxPublish.java:634)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.drain(FluxPublish.java:494)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.onComplete(FluxPublish.java:355)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onComplete(FluxContextWrite.java:126)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onComplete(FluxMapFuseable.java:350)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drainAsync(FluxFlattenIterable.java:371)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drain(FluxFlattenIterable.java:724)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.onComplete(FluxFlattenIterable.java:273)
+		at reactor.adapter.JdkFlowAdapter$SubscriberToRS.onComplete(JdkFlowAdapter.java:160)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.complete(ResponseSubscribers.java:933)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$new$1(ResponseSubscribers.java:864)
+		at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2147)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$subscribe$3(ResponseSubscribers.java:961)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:757)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+		at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2182)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.subscribe(ResponseSubscribers.java:957)
+		at reactor.adapter.JdkFlowAdapter$FlowPublisherAsFlux.subscribe(JdkFlowAdapter.java:68)
+		at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:68)
+		at reactor.core.publisher.FluxPublish.connect(FluxPublish.java:106)
+		at reactor.core.publisher.FluxAutoConnect.subscribe(FluxAutoConnect.java:62)
+		at reactor.core.publisher.Flux.subscribe(Flux.java:8836)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onNext(MonoFlatMapMany.java:196)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:294)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:188)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:121)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:67)
+		at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+		at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614)
+		at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:844)
+		at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483)
+		at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+		at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+		at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+		at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+		at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+25-05-02.00:15:24.748 [http-nio-8090-exec-3] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from POST http://127.0.0.1:11434/api/chat] with root cause
+org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from POST http://127.0.0.1:11434/api/chat
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 404 NOT_FOUND from POST http://127.0.0.1:11434/api/chat [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:214)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.checkTerminated(FluxPublish.java:634)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.drain(FluxPublish.java:494)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.onComplete(FluxPublish.java:355)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onComplete(FluxContextWrite.java:126)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onComplete(FluxMapFuseable.java:350)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drainAsync(FluxFlattenIterable.java:371)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drain(FluxFlattenIterable.java:724)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.onComplete(FluxFlattenIterable.java:273)
+		at reactor.adapter.JdkFlowAdapter$SubscriberToRS.onComplete(JdkFlowAdapter.java:160)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.complete(ResponseSubscribers.java:933)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$new$1(ResponseSubscribers.java:864)
+		at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2147)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$subscribe$3(ResponseSubscribers.java:961)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:757)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+		at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2182)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.subscribe(ResponseSubscribers.java:957)
+		at reactor.adapter.JdkFlowAdapter$FlowPublisherAsFlux.subscribe(JdkFlowAdapter.java:68)
+		at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:68)
+		at reactor.core.publisher.FluxPublish.connect(FluxPublish.java:106)
+		at reactor.core.publisher.FluxAutoConnect.subscribe(FluxAutoConnect.java:62)
+		at reactor.core.publisher.Flux.subscribe(Flux.java:8836)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onNext(MonoFlatMapMany.java:196)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:294)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:188)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:121)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:67)
+		at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+		at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614)
+		at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:844)
+		at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483)
+		at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+		at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+		at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+		at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+		at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+25-05-02.00:22:56.758 [http-nio-8090-exec-5] INFO  OllamaController       - 访问
+25-05-02.00:22:56.770 [http-nio-8090-exec-6] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] threw exception
+org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from POST http://127.0.0.1:11434/api/chat
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 404 NOT_FOUND from POST http://127.0.0.1:11434/api/chat [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:214)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.checkTerminated(FluxPublish.java:634)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.drain(FluxPublish.java:494)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.onComplete(FluxPublish.java:355)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onComplete(FluxContextWrite.java:126)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onComplete(FluxMapFuseable.java:350)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drainAsync(FluxFlattenIterable.java:371)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drain(FluxFlattenIterable.java:724)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.onComplete(FluxFlattenIterable.java:273)
+		at reactor.adapter.JdkFlowAdapter$SubscriberToRS.onComplete(JdkFlowAdapter.java:160)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.complete(ResponseSubscribers.java:933)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$new$1(ResponseSubscribers.java:864)
+		at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2147)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$subscribe$3(ResponseSubscribers.java:961)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:757)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+		at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2182)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.subscribe(ResponseSubscribers.java:957)
+		at reactor.adapter.JdkFlowAdapter$FlowPublisherAsFlux.subscribe(JdkFlowAdapter.java:68)
+		at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:68)
+		at reactor.core.publisher.FluxPublish.connect(FluxPublish.java:106)
+		at reactor.core.publisher.FluxAutoConnect.subscribe(FluxAutoConnect.java:62)
+		at reactor.core.publisher.Flux.subscribe(Flux.java:8836)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onNext(MonoFlatMapMany.java:196)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:294)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:188)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:121)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:67)
+		at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+		at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614)
+		at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:844)
+		at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483)
+		at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+		at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+		at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+		at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+		at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+25-05-02.00:22:56.771 [http-nio-8090-exec-6] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from POST http://127.0.0.1:11434/api/chat] with root cause
+org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from POST http://127.0.0.1:11434/api/chat
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 404 NOT_FOUND from POST http://127.0.0.1:11434/api/chat [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:214)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.checkTerminated(FluxPublish.java:634)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.drain(FluxPublish.java:494)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.onComplete(FluxPublish.java:355)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onComplete(FluxContextWrite.java:126)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onComplete(FluxMapFuseable.java:350)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drainAsync(FluxFlattenIterable.java:371)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drain(FluxFlattenIterable.java:724)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.onComplete(FluxFlattenIterable.java:273)
+		at reactor.adapter.JdkFlowAdapter$SubscriberToRS.onComplete(JdkFlowAdapter.java:160)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.complete(ResponseSubscribers.java:933)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$new$1(ResponseSubscribers.java:864)
+		at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2147)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$subscribe$3(ResponseSubscribers.java:961)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:757)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+		at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2182)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.subscribe(ResponseSubscribers.java:957)
+		at reactor.adapter.JdkFlowAdapter$FlowPublisherAsFlux.subscribe(JdkFlowAdapter.java:68)
+		at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:68)
+		at reactor.core.publisher.FluxPublish.connect(FluxPublish.java:106)
+		at reactor.core.publisher.FluxAutoConnect.subscribe(FluxAutoConnect.java:62)
+		at reactor.core.publisher.Flux.subscribe(Flux.java:8836)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onNext(MonoFlatMapMany.java:196)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:294)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:188)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:121)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:67)
+		at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+		at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614)
+		at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:844)
+		at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483)
+		at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+		at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+		at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+		at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+		at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+25-05-02.00:32:49.171 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-05-02.00:32:49.174 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-05-02.00:32:52.463 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 73032 (E:\projects\ai-rag-knowledge\app\target\classes started by roxy in E:\projects\ai-rag-knowledge)
+25-05-02.00:32:52.464 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-05-02.00:32:53.215 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-05-02.00:32:53.218 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-05-02.00:32:53.246 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+25-05-02.00:32:53.877 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-05-02.00:32:53.894 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-05-02.00:32:53.895 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-05-02.00:32:53.895 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-05-02.00:32:53.966 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-05-02.00:32:53.966 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1313 ms
+25-05-02.00:32:54.259 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-05-02.00:32:54.364 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@21c99abf
+25-05-02.00:32:54.366 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-05-02.00:32:56.087 [main            ] INFO  Version                - Redisson 3.44.0
+25-05-02.00:32:56.421 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-05-02.00:32:56.435 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-05-02.00:32:56.944 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+25-05-02.00:32:56.956 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8090 (http) with context path ''
+25-05-02.00:32:56.962 [main            ] INFO  Application            - Started Application in 4.94 seconds (process running for 5.613)
+25-05-02.00:33:01.395 [http-nio-8090-exec-2] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-05-02.00:33:01.395 [http-nio-8090-exec-2] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-05-02.00:33:01.396 [http-nio-8090-exec-2] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-05-02.00:33:01.427 [http-nio-8090-exec-2] INFO  OllamaController       - 访问
+25-05-02.00:33:01.539 [http-nio-8090-exec-3] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] threw exception
+org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from POST http://127.0.0.1:11434/api/chat
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 404 NOT_FOUND from POST http://127.0.0.1:11434/api/chat [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:214)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.checkTerminated(FluxPublish.java:634)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.drain(FluxPublish.java:494)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.onComplete(FluxPublish.java:355)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onComplete(FluxContextWrite.java:126)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onComplete(FluxMapFuseable.java:350)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drainAsync(FluxFlattenIterable.java:371)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drain(FluxFlattenIterable.java:724)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.onComplete(FluxFlattenIterable.java:273)
+		at reactor.adapter.JdkFlowAdapter$SubscriberToRS.onComplete(JdkFlowAdapter.java:160)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.complete(ResponseSubscribers.java:933)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$new$1(ResponseSubscribers.java:864)
+		at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2147)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$subscribe$3(ResponseSubscribers.java:961)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:757)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+		at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2182)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.subscribe(ResponseSubscribers.java:957)
+		at reactor.adapter.JdkFlowAdapter$FlowPublisherAsFlux.subscribe(JdkFlowAdapter.java:68)
+		at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:68)
+		at reactor.core.publisher.FluxPublish.connect(FluxPublish.java:106)
+		at reactor.core.publisher.FluxAutoConnect.subscribe(FluxAutoConnect.java:62)
+		at reactor.core.publisher.Flux.subscribe(Flux.java:8836)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onNext(MonoFlatMapMany.java:196)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:294)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:188)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:121)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:67)
+		at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+		at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614)
+		at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:844)
+		at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483)
+		at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+		at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+		at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+		at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+		at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+25-05-02.00:33:01.542 [http-nio-8090-exec-3] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from POST http://127.0.0.1:11434/api/chat] with root cause
+org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from POST http://127.0.0.1:11434/api/chat
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 404 NOT_FOUND from POST http://127.0.0.1:11434/api/chat [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:214)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.checkTerminated(FluxPublish.java:634)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.drain(FluxPublish.java:494)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.onComplete(FluxPublish.java:355)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onComplete(FluxContextWrite.java:126)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onComplete(FluxMapFuseable.java:350)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drainAsync(FluxFlattenIterable.java:371)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drain(FluxFlattenIterable.java:724)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.onComplete(FluxFlattenIterable.java:273)
+		at reactor.adapter.JdkFlowAdapter$SubscriberToRS.onComplete(JdkFlowAdapter.java:160)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.complete(ResponseSubscribers.java:933)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$new$1(ResponseSubscribers.java:864)
+		at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2147)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$subscribe$3(ResponseSubscribers.java:961)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:757)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+		at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2182)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.subscribe(ResponseSubscribers.java:957)
+		at reactor.adapter.JdkFlowAdapter$FlowPublisherAsFlux.subscribe(JdkFlowAdapter.java:68)
+		at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:68)
+		at reactor.core.publisher.FluxPublish.connect(FluxPublish.java:106)
+		at reactor.core.publisher.FluxAutoConnect.subscribe(FluxAutoConnect.java:62)
+		at reactor.core.publisher.Flux.subscribe(Flux.java:8836)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onNext(MonoFlatMapMany.java:196)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:294)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:188)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:121)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:67)
+		at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+		at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614)
+		at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:844)
+		at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483)
+		at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+		at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+		at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+		at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+		at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+25-05-02.00:36:36.312 [http-nio-8090-exec-6] INFO  OllamaController       - 访问
+25-05-02.00:36:36.320 [http-nio-8090-exec-5] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] threw exception
+org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from POST http://127.0.0.1:11434/api/chat
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 404 NOT_FOUND from POST http://127.0.0.1:11434/api/chat [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:214)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.checkTerminated(FluxPublish.java:634)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.drain(FluxPublish.java:494)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.onComplete(FluxPublish.java:355)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onComplete(FluxContextWrite.java:126)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onComplete(FluxMapFuseable.java:350)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drainAsync(FluxFlattenIterable.java:371)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drain(FluxFlattenIterable.java:724)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.onComplete(FluxFlattenIterable.java:273)
+		at reactor.adapter.JdkFlowAdapter$SubscriberToRS.onComplete(JdkFlowAdapter.java:160)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.complete(ResponseSubscribers.java:933)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$new$1(ResponseSubscribers.java:864)
+		at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2147)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$subscribe$3(ResponseSubscribers.java:961)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:757)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+		at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2182)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.subscribe(ResponseSubscribers.java:957)
+		at reactor.adapter.JdkFlowAdapter$FlowPublisherAsFlux.subscribe(JdkFlowAdapter.java:68)
+		at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:68)
+		at reactor.core.publisher.FluxPublish.connect(FluxPublish.java:106)
+		at reactor.core.publisher.FluxAutoConnect.subscribe(FluxAutoConnect.java:62)
+		at reactor.core.publisher.Flux.subscribe(Flux.java:8836)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onNext(MonoFlatMapMany.java:196)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:294)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:188)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:121)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:67)
+		at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+		at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614)
+		at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:844)
+		at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483)
+		at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+		at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+		at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+		at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+		at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+25-05-02.00:36:36.322 [http-nio-8090-exec-5] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from POST http://127.0.0.1:11434/api/chat] with root cause
+org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from POST http://127.0.0.1:11434/api/chat
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 404 NOT_FOUND from POST http://127.0.0.1:11434/api/chat [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:310)
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:214)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.checkTerminated(FluxPublish.java:634)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.drain(FluxPublish.java:494)
+		at reactor.core.publisher.FluxPublish$PublishSubscriber.onComplete(FluxPublish.java:355)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onComplete(FluxContextWrite.java:126)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onComplete(FluxMapFuseable.java:350)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drainAsync(FluxFlattenIterable.java:371)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drain(FluxFlattenIterable.java:724)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.onComplete(FluxFlattenIterable.java:273)
+		at reactor.adapter.JdkFlowAdapter$SubscriberToRS.onComplete(JdkFlowAdapter.java:160)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.complete(ResponseSubscribers.java:933)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$new$1(ResponseSubscribers.java:864)
+		at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2147)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$subscribe$3(ResponseSubscribers.java:961)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:757)
+		at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+		at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2182)
+		at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.subscribe(ResponseSubscribers.java:957)
+		at reactor.adapter.JdkFlowAdapter$FlowPublisherAsFlux.subscribe(JdkFlowAdapter.java:68)
+		at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:68)
+		at reactor.core.publisher.FluxPublish.connect(FluxPublish.java:106)
+		at reactor.core.publisher.FluxAutoConnect.subscribe(FluxAutoConnect.java:62)
+		at reactor.core.publisher.Flux.subscribe(Flux.java:8836)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onNext(MonoFlatMapMany.java:196)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:294)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:188)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:121)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:67)
+		at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+		at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614)
+		at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:844)
+		at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483)
+		at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+		at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+		at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+		at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+		at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+25-05-02.00:36:49.731 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-05-02.00:36:49.733 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-05-02.00:36:53.020 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 76896 (E:\projects\ai-rag-knowledge\app\target\classes started by roxy in E:\projects\ai-rag-knowledge)
+25-05-02.00:36:53.021 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-05-02.00:36:53.700 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-05-02.00:36:53.702 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-05-02.00:36:53.725 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+25-05-02.00:36:54.269 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-05-02.00:36:54.278 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-05-02.00:36:54.280 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-05-02.00:36:54.280 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-05-02.00:36:54.352 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-05-02.00:36:54.352 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1157 ms
+25-05-02.00:36:54.675 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-05-02.00:36:54.772 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@670a4738
+25-05-02.00:36:54.773 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-05-02.00:36:55.338 [main            ] INFO  Version                - Redisson 3.44.0
+25-05-02.00:36:55.704 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-05-02.00:36:55.722 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-05-02.00:36:56.204 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+25-05-02.00:36:56.213 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8090 (http) with context path ''
+25-05-02.00:36:56.219 [main            ] INFO  Application            - Started Application in 3.753 seconds (process running for 5.088)
+25-05-02.00:37:00.136 [http-nio-8090-exec-2] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-05-02.00:37:00.136 [http-nio-8090-exec-2] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-05-02.00:37:00.137 [http-nio-8090-exec-2] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-05-02.00:37:00.170 [http-nio-8090-exec-2] INFO  OllamaController       - 访问
+25-05-02.00:38:58.227 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-05-02.00:38:58.229 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-05-02.00:39:14.757 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 78384 (E:\projects\ai-rag-knowledge\app\target\classes started by roxy in E:\projects\ai-rag-knowledge)
+25-05-02.00:39:14.759 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-05-02.00:39:15.436 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-05-02.00:39:15.438 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-05-02.00:39:15.461 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+25-05-02.00:39:15.953 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-05-02.00:39:15.960 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-05-02.00:39:15.961 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-05-02.00:39:15.961 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-05-02.00:39:16.019 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-05-02.00:39:16.019 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1033 ms
+25-05-02.00:39:16.268 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-05-02.00:39:16.369 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@5b5b9521
+25-05-02.00:39:16.370 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-05-02.00:39:16.953 [main            ] INFO  Version                - Redisson 3.44.0
+25-05-02.00:39:17.316 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-05-02.00:39:17.335 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-05-02.00:39:17.958 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+25-05-02.00:39:17.972 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8090 (http) with context path ''
+25-05-02.00:39:17.980 [main            ] INFO  Application            - Started Application in 3.691 seconds (process running for 4.21)
+25-05-02.00:39:23.796 [http-nio-8090-exec-2] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-05-02.00:39:23.797 [http-nio-8090-exec-2] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-05-02.00:39:23.798 [http-nio-8090-exec-2] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-05-02.00:39:23.841 [http-nio-8090-exec-2] WARN  OllamaApi              - [404] Not Found - {"error":"model \"deepseek\" not found, try pulling it first"}
+25-05-02.00:39:23.844 [http-nio-8090-exec-2] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: [404] Not Found - {"error":"model \"deepseek\" not found, try pulling it first"}] with root cause
+java.lang.RuntimeException: [404] Not Found - {"error":"model \"deepseek\" not found, try pulling it first"}
+	at org.springframework.ai.ollama.api.OllamaApi$OllamaResponseErrorHandler.handleError(OllamaApi.java:78)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.StatusHandler.lambda$fromErrorHandler$1(StatusHandler.java:71)
+	at org.springframework.web.client.StatusHandler.handle(StatusHandler.java:146)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.applyStatusHandlers(DefaultRestClient.java:680)
+	at org.springframework.web.client.DefaultRestClient.readWithMessageConverters(DefaultRestClient.java:200)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.readBody(DefaultRestClient.java:667)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.body(DefaultRestClient.java:613)
+	at org.springframework.ai.ollama.api.OllamaApi.chat(OllamaApi.java:520)
+	at org.springframework.ai.ollama.OllamaChatClient.call(OllamaChatClient.java:85)
+	at com.xuanguan.dev.trigger.http.OllamaController.generate(OllamaController.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+25-05-02.00:40:22.116 [http-nio-8090-exec-5] INFO  OllamaController       - 访问
+25-05-02.00:40:46.060 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-05-02.00:40:46.064 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-05-02.09:45:23.925 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 78104 (E:\projects\ai-rag-knowledge\app\target\classes started by roxy in E:\projects\ai-rag-knowledge)
+25-05-02.09:45:23.927 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-05-02.09:45:25.092 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-05-02.09:45:25.096 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-05-02.09:45:25.129 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+25-05-02.09:45:26.198 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-05-02.09:45:26.214 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-05-02.09:45:26.216 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-05-02.09:45:26.216 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-05-02.09:45:26.315 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-05-02.09:45:26.315 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2043 ms
+25-05-02.09:45:26.754 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-05-02.09:45:26.958 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@54496c2d
+25-05-02.09:45:26.962 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-05-02.09:45:28.939 [main            ] INFO  Version                - Redisson 3.44.0
+25-05-02.09:45:29.549 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-05-02.09:45:29.569 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-05-02.09:45:30.319 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+25-05-02.09:45:30.336 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8090 (http) with context path ''
+25-05-02.09:45:30.347 [main            ] INFO  Application            - Started Application in 7.153 seconds (process running for 8.384)
+25-05-02.09:45:48.724 [http-nio-8090-exec-2] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-05-02.09:45:48.724 [http-nio-8090-exec-2] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-05-02.09:45:48.725 [http-nio-8090-exec-2] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-05-02.09:45:48.759 [http-nio-8090-exec-2] INFO  OllamaController       - 访问
+25-05-02.09:46:26.868 [http-nio-8090-exec-6] INFO  OllamaController       - 访问
+25-05-02.10:31:48.128 [http-nio-8090-exec-7] INFO  OllamaController       - 访问
+25-05-02.10:50:32.944 [http-nio-8090-exec-9] INFO  OllamaController       - 访问
+25-05-02.10:50:54.645 [http-nio-8090-exec-2] INFO  OllamaController       - 访问
+25-05-02.10:55:26.024 [http-nio-8090-exec-5] INFO  OllamaController       - 访问
+25-05-02.12:59:38.256 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-05-02.12:59:38.300 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
