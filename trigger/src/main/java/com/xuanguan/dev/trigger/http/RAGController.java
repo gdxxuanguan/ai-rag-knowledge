@@ -14,6 +14,7 @@ import org.springframework.ai.vectorstore.PgVectorStore;
 import org.springframework.ai.vectorstore.SimpleVectorStore;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.reactive.function.client.WebClient;
 
 import java.util.List;
 
@@ -33,6 +34,7 @@ public class RAGController implements IAIRAGService {
     private PgVectorStore pgVectorStore;
     @Resource
     private RedissonClient redissonClient;
+
 
     @Override
     @GetMapping("query_rag_tag_list")
@@ -74,4 +76,7 @@ public class RAGController implements IAIRAGService {
                 .info("调用成功")
                 .build();
     }
+
+
+
 }
