@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f573f03-eb43-4ab9-9023-d30fa4d25621" name="Changes" comment="简单的RAG知识库测试">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/xuanguan/dev/config/DeepSeekApiConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trigger/src/main/java/com/xuanguan/dev/trigger/http/DeepSeekController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/data/log/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/app/data/log/log_error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/data/log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/app/data/log/log_info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/log/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log_error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log_info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trigger/src/main/java/com/xuanguan/dev/trigger/http/RAGController.java" beforeDir="false" afterPath="$PROJECT_DIR$/trigger/src/main/java/com/xuanguan/dev/trigger/http/RAGController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xuanguan/dev/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/xuanguan/dev/Application.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,39 +47,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.dev-ops/docker-compose-environment-aliyun.yml.pgadmin: Compose Deployment.executor": "Run",
-    "Docker.dev-ops/docker-compose-environment-aliyun.yml.vector_db: Compose Deployment.executor": "Run",
-    "Docker.dev-ops/docker-compose-environment-aliyun.yml: Compose Deployment.executor": "Run",
-    "JUnit.RAGTest.chat.executor": "Run",
-    "JUnit.RAGTest.executor": "Run",
-    "JUnit.RAGTest.upload.executor": "Run",
-    "Maven.ai-rag-knowledge [clean].executor": "Run",
-    "Maven.ai-rag-knowledge [install].executor": "Run",
-    "Maven.ai-rag-knowledge [org.apache.maven.plugins:maven-clean-plugin:3.3.2:clean].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.Application.executor": "Run",
-    "Spring Boot.Unnamed.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/projects/ai-rag-knowledge/app/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.dev-ops/docker-compose-environment-aliyun.yml.pgadmin: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dev-ops/docker-compose-environment-aliyun.yml.vector_db: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dev-ops/docker-compose-environment-aliyun.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RAGTest.chat.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RAGTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RAGTest.upload.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ai-rag-knowledge [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ai-rag-knowledge [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ai-rag-knowledge [org.apache.maven.plugins:maven-clean-plugin:3.3.2:clean].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Application.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/projects/ai-rag-knowledge/app/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -230,6 +223,7 @@
       <workItem from="1746108821514" duration="19179000" />
       <workItem from="1746452927101" duration="3565000" />
       <workItem from="1746686266630" duration="8474000" />
+      <workItem from="1746942151700" duration="260000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
