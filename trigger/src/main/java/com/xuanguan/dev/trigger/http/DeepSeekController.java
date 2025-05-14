@@ -4,6 +4,7 @@ import com.xuanguan.dev.api.response.Response;
 import jakarta.annotation.Resource;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.ai.chat.ChatResponse;
 import org.springframework.ai.chat.messages.Message;
 import org.springframework.ai.chat.messages.UserMessage;
 import org.springframework.ai.chat.prompt.SystemPromptTemplate;
@@ -95,6 +96,53 @@ public class DeepSeekController {
                     }
                     return Response.<String>builder().code("1111").info("fail").build();
                 });
+    }
+
+    @PostMapping("chat")
+    public ChatResponse chatDeepseekStandard(
+            @RequestParam List<String> ragTagList,
+            @RequestParam String message) {
+
+        // 1. 构建向量数据库查询条件
+        String filter = ragTagList.stream()
+                .map(tag -> "knowledge == '" + tag + "'")
+                .collect(Collectors.joining(" OR "));
+
+        SearchRequest searchRequest = SearchRequest.query(message)
+                .withTopK(5)
+                .withFilterExpression(filter);
+
+        // 2. 执行向量搜索
+        List<Document> documents = pgVectorStore.similaritySearch(searchRequest);
+        String context = documents.stream()
+                .map(Document::getContent)
+                .collect(Collectors.joining("\n"));
+
+        // 3. 动态生成系统提示
+        String systemPrompt = MessageFormat.format("""
+    Use the information from the DOCUMENTS section to provide accurate answers.
+    If unsure, state you dont know. Reply in Chinese!
+    DOCUMENTS: {0}
+    """, context);
+
+        // 4. 构建API请求消息体
+        List<Map<String, String>> apiMessages = new ArrayList<>();
+        apiMessages.add(Map.of(
+                "role", "system",
+                "content", systemPrompt
+        ));
+        apiMessages.add(Map.of(
+                "role", "user",
+                "content", message
+        ));
+
+        // 5. 构建ChatClient调用
+        return ChatClient.builder(deepSeekChatModel)  // 需注入DeepSeek的ChatModel实现
+                .build()
+                .prompt()
+                .messages(apiMessages)  // 复用已构建的消息列表
+                .call()
+                .chatResponse();
     }
 
     // 6. 定义响应DTO
